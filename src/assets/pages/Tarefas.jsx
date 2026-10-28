@@ -51,7 +51,7 @@ const Tarefas = () => {
     async function buscarTarefas() {
         try {
             if (!usuario) {
-                navigate = ("/");
+                navigate("/");
             }
 
             const resposta = await AXIOS.get(`/tarefas?id=${usuario.id}`);
